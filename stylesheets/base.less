@@ -335,5 +335,14 @@
 }
 
 .editor.mini .scroll-view {
-  padding-left: 1px;
+  .selection .region { background-color: @blue-selection; }
+}
+
+atom-text-editor[mini], atom-text-editor[mini]::shadow,
+.highlights {
+  .selection .region { background-color: @blue-selection; }
+}
+
+atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
+  .selection .region { background-color: @blue-selection; }
 }
